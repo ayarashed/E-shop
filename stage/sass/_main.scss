@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+@import 'layout/header';
+@import 'layout/slider';
+@import 'layout/footer';
+@import 'pages/home';
+@import 'pages/listing';
+@import 'pages/product-view';

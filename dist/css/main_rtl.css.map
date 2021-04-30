@@ -1,0 +1,1 @@
+{"version":3,"sources":["_main.scss"],"names":[],"mappings":"AAAA,EACI,6BAAY,CAAZ,qBAAsB","file":"main_rtl.css","sourcesContent":["*{\r\n    box-sizing: border-box;\r\n}\r\n@import 'layout/header';\r\n@import 'layout/slider';\r\n@import 'layout/footer';\r\n@import 'pages/home';\r\n@import 'pages/listing';\r\n@import 'pages/product-view';\r\n"]}
