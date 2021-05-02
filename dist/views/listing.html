@@ -1,17 +1,267 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>The Furnish</title>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../css/minifiedstyle/ltrstyle.min.css" id="ink" />
-  <!--<link rel="stylesheet" href="css/minifiedstyle/rtlstyle.min.css" id="ink">-->
-</head>
-<body>
-    
-  <script src="../scripts/MinifiedJs/scripts.min.js"></script>
-</body>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>The Furnish</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/minifiedstyle/ltrstyle.min.css" id="ink" />
+    <!--<link rel="stylesheet" href="css/minifiedstyle/rtlstyle.min.css" id="ink">-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="../index.html" style="text-decoration:none">
+                <span class="icon-noun_Home_2102808"></span>
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page"><span>
+                All products
+              </span></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-3 filters-container bg-info">
+          <div class="filters">
+            <div class="filter">
+              <div class="filter-header">
+                <div class="filter-title">
+                  product type
+                </div>
+                <div class="filter-icon">
+                  <span class="up-icon">
+                    <i class="fas fa-chevron-up"></i>
+                  </span>
+                  <span class="down-icon">
+                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="filter-content">
+                <ul class="types">
+                  <li class="type">
+                    <input type="checkbox">
+                    <span class="type-name">
+                      t-shirt
+                    </span>
+                    <span class="type-count">
+                      (411)
+                    </span>
+                  </li>
+                  <li class="type">
+                    <input type="checkbox">
+                    <span class="type-name">
+                      sweetshirts
+                    </span>
+                    <span class="type-count">
+                      (131)
+                    </span>
+                  </li>
+                  <li class="type">
+                    <input type="checkbox">
+                    <span class="type-name">
+                      tank tops
+                    </span>
+                    <span class="type-count">
+                      (56)
+                    </span>
+                  </li>
+                  <li class="type">
+                    <input type="checkbox">
+                    <span class="type-name">
+                      dress shirts
+                    </span>
+                    <span class="type-count">
+                      (8)
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter">
+              <div class="filter-header">
+                <div class="filter-title">
+                  price
+                </div>
+                <div class="filter-icon">
+                  <span class="up-icon">
+                    <i class="fas fa-chevron-up"></i>
+                  </span>
+                  <span class="down-icon">
+                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="filter-content">
+                <div class="price-range">
+                  <span class="min-range">0 usd</span>
+                  <span class="max-range">0 usd</span>
+                </div>
+              </div>
+            </div>
+            <div class="filter">
+              <div class="filter-header">
+                <div class="filter-title">
+                  collection
+                </div>
+                <div class="filter-icon">
+                  <span class="up-icon">
+                    <i class="fas fa-chevron-up"></i>
+                  </span>
+                  <span class="down-icon">
+                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="filter-content">
+              </div>
+            </div>
+            <div class="filter">
+              <div class="filter-header">
+                <div class="filter-title">
+                  size
+                </div>
+                <div class="filter-icon">
+                  <span class="up-icon">
+                    <i class="fas fa-chevron-up"></i>
+                  </span>
+                  <span class="down-icon">
+                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="filter-content">
+                <ul class="sizes">
+                  <li class="size">
+                    xs
+                  </li>
+                  <li class="size">
+                    s
+                  </li>
+                  <li class="size">
+                    m
+                  </li>
+                  <li class="size">
+                    l
+                  </li>
+                  <li class="size">
+                    xl
+                  </li>
+                  <li class="size">
+                    xxl
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter">
+              <div class="filter-header">
+                <div class="filter-title">
+                  colors
+                </div>
+                <div class="filter-icon">
+                  <span class="up-icon">
+                    <i class="fas fa-chevron-up"></i>
+                  </span>
+                  <span class="down-icon">
+                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="filter-content">
+                <ul class="colors">
+                  <li class="color">
+                  </li>
+                  <li class="color">
+                  </li>
+                  <li class="color">
+                  </li>
+                  <li class="color">
+                  </li>
+                  <li class="color">
+                  </li>
+                  <li class="color">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-12 products-wrapper bg-warning">
+          <div class="products-control">
+            <h4 class="products-title">
+              men's top <span class="products-count">(133)</span>
+            </h4>
+            <div class="controls">
+              <div class="show-count">
+                <span>show products: </span>
+                <select>
+                  <option value="10">30</option>
+                  <option value="20">40</option>
+                  <option value="30">50</option>
+                </select>
+              </div>
+              <div class="sort">
+                <span>sort: </span>
+                <select>
+                  <option value="popular">popular</option>
+                  <option value="highest-price">highest-price</option>
+                  <option value="lowest-price">lowest-price</option>lowest
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+              <div class="product">
+                <div class="product-img">
+                  <img src="../images/AdobeStock_118120200.png" alt="">
+                </div>
+                <div class="product-details">
+                  <h6 class="product-name">Losse knit 3/4 Sleve</h6>
+                  <div class="price">
+                    <span class="discounted-price"></span>
+                    <span class="original-price">$ 119.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <button class="prev">prev</button>
+            <div class="pages">
+              <button>1</button>
+            </div>
+            <button class="next">next</button>
+          </div>
+        </div>
+      </div>
+      <div class="row newsletter">
+        <div class="newsletter-text">
+          <p>Subscribe to our newsletter and
+            receive exclusive offers every week
+          </p>
+        </div>
+        <form class="newsletter-form">
+          <input type="text" placeholder="enter your email">
+          <button type="submit">subscrib</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../scripts/MinifiedJs/scripts.min.js"></script>
+    <script src="../scripts/vendor/okzoom.js"></script>
+    <script src="../scripts/vendor/swiper-bundle.min.js"></script>
+
+  </body>
+
 </html>
