@@ -31,7 +31,7 @@
         </nav>
       </div>
       <div class="row">
-        <div class="col-md-3 filters-container bg-info">
+        <div class="col-md-3 filters-container">
           <div class="filters">
             <div class="filter">
               <div class="filter-header">
@@ -43,14 +43,16 @@
                     <i class="fas fa-chevron-up"></i>
                   </span>
                   <span class="down-icon">
-                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                    <i class="fas fa-chevron-down"></i>
                   </span>
                 </div>
               </div>
               <div class="filter-content">
                 <ul class="types">
                   <li class="type">
-                    <input type="checkbox">
+                    <div class="custom-checkbox-wrapper">
+                      <span><i class="fas fa-check"></i></span>
+                    </div>
                     <span class="type-name">
                       t-shirt
                     </span>
@@ -59,7 +61,9 @@
                     </span>
                   </li>
                   <li class="type">
-                    <input type="checkbox">
+                    <div class="custom-checkbox-wrapper">
+                      <span><i class="fas fa-check"></i></span>
+                    </div>
                     <span class="type-name">
                       sweetshirts
                     </span>
@@ -68,7 +72,9 @@
                     </span>
                   </li>
                   <li class="type">
-                    <input type="checkbox">
+                    <div class="custom-checkbox-wrapper">
+                      <span><i class="fas fa-check"></i></span>
+                    </div>
                     <span class="type-name">
                       tank tops
                     </span>
@@ -77,7 +83,9 @@
                     </span>
                   </li>
                   <li class="type">
-                    <input type="checkbox">
+                    <div class="custom-checkbox-wrapper">
+                      <span><i class="fas fa-check"></i></span>
+                    </div>
                     <span class="type-name">
                       dress shirts
                     </span>
@@ -98,14 +106,17 @@
                     <i class="fas fa-chevron-up"></i>
                   </span>
                   <span class="down-icon">
-                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                    <i class="fas fa-chevron-down"></i>
                   </span>
                 </div>
               </div>
               <div class="filter-content">
                 <div class="price-range">
                   <span class="min-range">0 usd</span>
-                  <span class="max-range">0 usd</span>
+                  <span class="max-range">500 usd</span>
+                </div>
+                <div class="input-range-wrapper">
+                  <input type="range" min="0" max="500" value="500" class="range-input">
                 </div>
               </div>
             </div>
@@ -119,7 +130,7 @@
                     <i class="fas fa-chevron-up"></i>
                   </span>
                   <span class="down-icon">
-                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                    <i class="fas fa-chevron-down"></i>
                   </span>
                 </div>
               </div>
@@ -136,7 +147,7 @@
                     <i class="fas fa-chevron-up"></i>
                   </span>
                   <span class="down-icon">
-                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                    <i class="fas fa-chevron-down"></i>
                   </span>
                 </div>
               </div>
@@ -173,23 +184,29 @@
                     <i class="fas fa-chevron-up"></i>
                   </span>
                   <span class="down-icon">
-                    <i class="fas fa-chevron-down" style="display: none;"></i>
+                    <i class="fas fa-chevron-down"></i>
                   </span>
                 </div>
               </div>
               <div class="filter-content">
                 <ul class="colors">
                   <li class="color">
+                    <span></span>
                   </li>
                   <li class="color">
+                    <span></span>
                   </li>
                   <li class="color">
+                    <span></span>
                   </li>
                   <li class="color">
+                    <span></span>
                   </li>
                   <li class="color">
+                    <span></span>
                   </li>
                   <li class="color">
+                    <span></span>
                   </li>
                 </ul>
               </div>
@@ -261,6 +278,30 @@
     <script src="../scripts/MinifiedJs/scripts.min.js"></script>
     <script src="../scripts/vendor/okzoom.js"></script>
     <script src="../scripts/vendor/swiper-bundle.min.js"></script>
+
+    <script>
+      //toggle show / hide check on checkbox
+      const checkboxWrappers = document.querySelectorAll(".custom-checkbox-wrapper");
+
+      checkboxWrappers.forEach((wrapper) => {
+        wrapper.addEventListener("click", (e) => {
+          e.target.children[0].classList.toggle('show')
+        });
+
+      });
+
+      //toggle show class on filter content
+      const filterHeaders = document.querySelectorAll('.filter-header ')
+
+      filterHeaders.forEach(filterHeader => {
+        filterHeader.addEventListener('click', (e) => {
+          e.currentTarget.nextElementSibling.classList.toggle('show')
+          e.currentTarget.children[1].children[0].classList.toggle('hide')
+          e.currentTarget.children[1].children[1].classList.toggle('show')
+
+        })
+      })
+    </script>
 
   </body>
 
