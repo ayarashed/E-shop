@@ -1,0 +1,104 @@
+.icon-svg--navbar-brand{
+    width: 45.77px;
+    height: 35px;
+}
+.icon-svg--search{
+    width: 22px;
+    height: 22px;
+}
+.icon-svg--avatar{
+    width: 19px;
+    height: 19px;
+}
+.icon-svg--cart{
+    width: 22px;
+    height: 22px;
+}
+.icon-svg--home{
+    width: 15px;
+    height: 15px;
+}
+.icon-svg--delivery{
+    width: 18px;
+    height: 11.3px;
+}
+.icon-svg--fast-delivery{
+    width: 18px;
+    height: 13.3px;
+}
+.icon-svg--description{
+    width: 30.15px;
+    height: 67px;
+    fill: #707070;
+    opacity: 20%;
+}
+.icon-svg--fast-care{
+    width: 30.15px;
+    height: 67px;
+    fill: #707070;
+    opacity: 20%;
+}
+.icon-svg--reviews-avatar{
+    width: 11px;
+    height: 13.44px;
+    fill: #707070;
+    opacity: 50%;
+}
+.icon-svg--reviews-stars{
+    width: 11px;
+    height: 13.44px;
+}
+.icon-svg--media{
+    width: 19.52px;
+    height: 13.42px;
+    &:hover{
+        fill: $linkscolor;
+    }
+}
+.icon-svg--right-arrow{
+    width: 19.52px;
+    height: 13.42px;
+    margin-left: 30px;
+}
+.icon-svg--favourite{
+    width: 16.5px;
+    height: 16.5px;
+    transition: all 0.3s ease;
+}
+/******************************shopping cart icon***************/
+.icon-svg--home-cart{
+    width: 17.5px;
+    height: 17.5px;
+    padding-left: 2px;
+}
+.icon-svg--icon-delivery{
+    width: 17px;
+    height: 14.16px;
+}
+.icon-svg--icon-payments{
+    width: 22.7px;
+    height: 13px;
+}
+.icon-svg--send{
+    width: 14px;
+    height: 13.9px;
+}
+.icon-svg--close{
+    width: 11.5px;
+    height: 11.5px;
+    @media only screen and (max-width : 480px){
+        width: 7.5px;
+        height: 7.5px;
+    }
+}
+.icon-svg--icon-back{
+    width:13.34px;
+    height:11.59px;
+    margin-right: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.icon-svg--close-toggle{
+    width: 11.5px;
+    height: 11.5px;
+    fill:$main-color;
+}

@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayarashed/E-shop.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayarashed/E-shop/issues"
+  },
+  "homepage": "https://github.com/ayarashed/E-shop#readme",
   "devDependencies": {
     "beeper": "^2.1.0",
     "gulp": "^4.0.2",

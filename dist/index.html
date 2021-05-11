@@ -1,15 +1,411 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>E-SHOP</title>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/svg/noun_cloth_2129414.svg" />
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/65899c7c08/UntitledProject/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/minifiedstyle/ltrstyle.min.css" id="ink" />
   <!--<link rel="stylesheet" href="css/minifiedstyle/rtlstyle.min.css" id="ink">-->
 </head>
-<body>
 
+<body>
+  <div class="wrapper-overlay overlay d-lg-none">
+    <button class="btn close-nav">
+      <span>
+        <svg class="icon-svg--close-toggle">
+            <use xlink:href ="images/iconmoon/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </span>
+    </button>
+  </div>
+  <header>
+    <nav class="upper-nav w-100 d-none d-lg-block">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-6"><span>Free shipment from $200</span></div>
+          <div class="col-6"><span>FREE 30 DAY RETURNS ON YOUR ORDERS</span></div>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="container">
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <div class="content">
+            <div class="logo">
+              <a href="../index.html" class="navbar-brand">
+                <img src="" alt="">
+                <svg class="icon-svg--navbar-brand">
+                  <use xlink:href ="images/iconmoon/symbol-defs.svg#icon-noun_cloth_21294141"></use>
+                </svg>
+                <p class="d-inline-block"><span>E-</span>Shop</p>
+              </a>
+            </div>
+            <ul class="links">
+              <li><a href="#" class="desktop-link"> Men</a>
+                <input type="checkbox" id="show-men">
+                <label for="show-men">Men</label>
+                <ul>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <li><a class="dropdown-item" href="#"><strong>Sale</strong> </a></li>
+                          <li><a class="dropdown-item" href="#"><strong>Bestsellers</strong></a></li>
+                          <li><a class="dropdown-item" href="#"><strong>Latest Arrivals</strong> </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <h3>Shoes</h3>
+                          <li><a class="dropdown-item" href="#"> Lifestyle </a></li>
+                          <li><a class="dropdown-item" href="#"> Running </a></li>
+                          <li><a class="dropdown-item" href="#"> Soccer </a></li>
+                          <li><a class="dropdown-item" href="#"> Basketball </a></li>
+                          <li><a class="dropdown-item" href="#"> Football </a></li>
+                          <li><a class="dropdown-item" href="#"> Golf</a></li>
+                          <li><a class="dropdown-item" href="#"> Baseball</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-12">
+                        <ul>
+                          <h3>Clothing</h3>
+                          <li><a class="dropdown-item" href="#"> Pants</a></li>
+                          <li><a class="dropdown-item" href="#"> Hoodies & Sweatshirts</a></li>
+                          <li><a class="dropdown-item" href="#"> Jackets & Vests</a></li>
+                          <li><a class="dropdown-item" href="#"> Track Suits</a></li>
+                          <li><a class="dropdown-item" href="#"> Short Sleeve Shirts </a></li>
+                          <li><a class="dropdown-item" href="#"> T-Shirts </a></li>
+                          <li><a class="dropdown-item" href="#"> Jerseys</a></li>
+                          <li><a class="dropdown-item" href="#"> Shorts </a></li>
+                          <li><a class="dropdown-item" href="#"> Jeans </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <h3>Accesorries</h3>
+                          <li><a class="dropdown-item" href="#">Backpacks</a></li>
+                          <li><a class="dropdown-item" href="#">Caps & Hats</a></li>
+                          <li><a class="dropdown-item" href="#">Watches</a></li>
+                          <li><a class="dropdown-item" href="#">Belts</a></li>
+                          <li><a class="dropdown-item" href="#">Bags</a></li>
+                          <li><a class="dropdown-item" href="#">Wallets & Cases</a></li>
+                          <li><a class="dropdown-item" href="#">Scarves</a></li>
+                          <li><a class="dropdown-item" href="#">Glasses</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-12">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/images.png">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/65577e6fb7110d7.png">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/21fbf455651fe1488d8e1bbf88615b23.png">
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li><a href="#" class="desktop-link"> Women</a>
+                <input type="checkbox" id="show-women">
+                <label for="show-women">Women</label>
+                <ul>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <li><a class="dropdown-item" href="#"><strong>Sale</strong> </a></li>
+                          <li><a class="dropdown-item" href="#"><strong>Bestsellers</strong></a></li>
+                          <li><a class="dropdown-item" href="#"><strong>Latest Arrivals</strong> </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <h3>Shoes</h3>
+                          <li><a class="dropdown-item" href="#"> Running </a></li>
+                          <li><a class="dropdown-item" href="#"> Soccer </a></li>
+                          <li><a class="dropdown-item" href="#"> Basketball </a></li>
+                          <li><a class="dropdown-item" href="#"> Football </a></li>
+                          <li><a class="dropdown-item" href="#"> Golf</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-12">
+                        <ul>
+                          <h3>Clothing</h3>
+                          <li><a class="dropdown-item" href="#"> Short Sleeve Shirts </a></li>
+                          <li><a class="dropdown-item" href="#"> T-Shirts </a></li>
+                          <li><a class="dropdown-item" href="#"> Jerseys</a></li>
+                          <li><a class="dropdown-item" href="#"> Shorts </a></li>
+                          <li><a class="dropdown-item" href="#"> Jeans </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <h3>Accesorries</h3>
+                          <li><a class="dropdown-item" href="#">Watches</a></li>
+                          <li><a class="dropdown-item" href="#">Belts</a></li>
+                          <li><a class="dropdown-item" href="#">Bags</a></li>
+                          <li><a class="dropdown-item" href="#">Wallets & Cases</a></li>
+                          <li><a class="dropdown-item" href="#">Scarves</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-12">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/images.png">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/65577e6fb7110d7.png">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/21fbf455651fe1488d8e1bbf88615b23.png">
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li><a href="#" class="desktop-link"> Kids</a>
+                <input type="checkbox" id="show-kids">
+                <label for="show-kids">Kids</label>
+                <ul>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <li><a class="dropdown-item" href="#"><strong>Sale</strong> </a></li>
+                          <li><a class="dropdown-item" href="#"><strong>Bestsellers</strong></a></li>
+                          <li><a class="dropdown-item" href="#"><strong>Latest Arrivals</strong> </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <h3>Shoes</h3>
+                          <li><a class="dropdown-item" href="#"> woman</a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-12">
+                        <ul>
+                          <h3>Clothing</h3>
+                          <li><a class="dropdown-item" href="#"> woman</a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-2 col-12">
+                        <ul>
+                          <h3>Accesorries</h3>
+                          <li><a class="dropdown-item" href="#"> woman</a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-12">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/images.png">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/65577e6fb7110d7.png">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img src="images/21fbf455651fe1488d8e1bbf88615b23.png">
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="action-link">
+            <ul>
+              <li>
+                <label for="show-search" class="search-icon">
+                  <svg class="icon-svg--search">
+                    <use xlink:href="images/iconmoon/symbol-defs.svg#icon-noun_Search_2102816-2"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn cart" data-bs-toggle="modal" data-bs-target="#cart-modal">
+                  <svg class="icon-svg--cart">
+                    <use xlink:href="images/iconmoon/symbol-defs.svg#icon-noun_cart_2102832-41"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="nav-item login-icon">
+                <a class="nav-link" href="#">
+                  <svg class="icon-svg--avatar">
+                    <use xlink:href="images/iconmoon/symbol-defs.svg#icon-noun_avatar_2102861-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item bar-menue"><label for="show-menu" class="menu-icon"><i
+                    class="fas fa-bars"></i></label></li>
+            </ul>
+          </div>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something To Search..." required>
+            <button class="go-icon" type="submit">
+              <svg class="icon-svg--right-arrow">
+                <use xlink:href="images/iconmoon/symbol-defs.svg#icon-Path-3"></use>
+              </svg>
+            </button>
+          </form>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--------end-navbar-->
+  <!-- Modal -->
+  <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            SHOPPING CART:
+          </h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span><i
+                class="fas fa-times"></i></span> close</button>
+        </div>
+        <div class="modal-body">
+          <div class="card-empty">
+            <span>Your cart is currently empty.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn continue-shop" data-bs-dismiss="modal">
+            Continue Shopping
+          </button>
+          <button type="button" class="btn cart-checkout" data-bs-dismiss="modal">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------end-modal------->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-12">
+            <div class="footer__logo">
+              <svg class="icon-svg--navbar-brand">
+                <use xlink:href ="../images/iconmoon/symbol-defs.svg#icon-noun_cloth_21294141"></use>
+              </svg>
+              <p class="d-inline-block"><span>E-</span>Shop</p>
+            </div>
+            <div class="footer__housebranddetail">
+              <p>House My Brand designs clothing for the young, the old &
+                everyone in between – but most importantly, for the fashionable</p>
+            </div>
+            <div class="footer__social-media">
+              <ul>
+                <li><a href="#"><svg class="icon-svg--media">
+                  <use xlink:href ="../images/iconmoon/symbol-defs.svg#icon-facebook-logo"></use>
+                </svg></a></li>
+                <li><a href="#"><svg class="icon-svg--media">
+                  <use xlink:href ="../images/iconmoon/symbol-defs.svg#icon-Group-25"></use>
+                </svg></a></li>
+                <li><a href="#"><svg class="icon-svg--media">
+                  <use xlink:href ="../images/iconmoon/symbol-defs.svg#icon-linkedin-logo"></use>
+                </svg></a></li>
+                <li><a href="#"><svg class="icon-svg--media">
+                  <use xlink:href ="../images/iconmoon/symbol-defs.svg#icon-instagram-1"></use>
+                </svg></a></li>
+                <li><a href="#"><svg class="icon-svg--media">
+                  <use xlink:href ="../images/iconmoon/symbol-defs.svg#icon-youtube"></use>
+                </svg></a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 col-12">
+          <div class="footer__nav">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12">
+                <h6>Shopping online</h6>
+                <ul>
+                  <li><a href="#">Order Status</a></li>
+                  <li><a href="#">Shipping and Delivery</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Payment Options</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <h6>Information</h6>
+                <ul>
+                  <li><a href="#">Gift Cards</a></li>
+                  <li><a href="#">Find a store</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">Bacome a member</a></li>
+                  <li><a href="#">Site feedback</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <h6>Contact</h6>
+                <ul>
+                  <li><a href="#">store@uikit.com</a></li>
+                  <li><a href="#">Hotline: +1 131 138 138</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__lower">
+      <div class="copy-right text-center">
+        <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+  <!------------------->
+  <div class="wrapper-overlay overlay d-lg-none">
+    <button class="btn close-nav">
+      <span>
+        <svg class="icon-svg--close-toggle">
+            <use xlink:href ="../images/iconmoon/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </span>
+    </button>
+  </div>
   <script src="scripts/MinifiedJs/scripts.min.js"></script>
 </body>
+
 </html>

@@ -58,7 +58,7 @@ gulp.task('minifyltrcss', function () {
 
 
 gulp.task('minifyJs', function () { 
-    return gulp.src(['dist/scripts/vendor/jquery-3.3.1.min.js','dist/scripts/vendor/all.min.js ','dist/scripts/vendor/bootstrap.bundle.min.js','dist/scripts/vendor/jquery.validate.min.js','dist/scripts/vendor/additional-methods.min.js','dist/scripts/vendor/owl.carousel.min.js','stage/scripts/main.js'])
+    return gulp.src(['dist/scripts/vendor/jquery-3.3.1.min.js','dist/scripts/vendor/all.min.js ','dist/scripts/vendor/bootstrap.bundle.min.js','dist/scripts/vendor/jquery.validate.min.js','dist/scripts/vendor/additional-methods.min.js','dist/scripts/vendor/owl.carousel.min.js','dist/scripts/vendor/jquery.imgzoom.js','stage/scripts/main.js'])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify()) 
     .pipe(gulp.dest('dist/scripts/MinifiedJs'));
@@ -66,8 +66,8 @@ gulp.task('minifyJs', function () {
 //////////////////////////////////////////////////////////////
 
 gulp.task('watch', function () {
-    gulp.watch(['stage/sass/*.scss','stage/sass/*/*.scss'],
-    gulp.series(['SassCompile','minifyltrcss']));
+    gulp.watch(['stage/sass/*.scss','stage/sass/*/*.scss','stage/scripts/*.js'],
+    gulp.series(['SassCompile','minifyltrcss','minifyJs']));
 });
 /*'minifyrtlcss','minifyJs'*/
 //,'stage/scripts/*.js','stage/scripts/*/*.js'

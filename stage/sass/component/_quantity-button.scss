@@ -1,0 +1,63 @@
+.button-quantity{
+    .btn-group{
+        padding: 10px 10px;
+        border: 1px solid $color;
+        border-radius: 40px;
+        @media only screen and (min-width : 320px) and (max-width : 480px){
+            padding: 6px 6px;
+        }
+        @media only screen and (min-width : 769px) and (max-width : 1024px){
+            padding: 6px 10px;
+        }
+    }
+    .quantity {
+        margin-top: 15px;
+        @media only screen and (min-width : 769px) and (max-width : 1024px){
+            margin-top: 5px;
+        }
+    }
+       
+       .quantity .input-text.qty {
+        width: 35px;
+        padding: 0 5px;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+       }
+       
+       .quantity.buttons_added {
+        text-align: left;
+        position: relative;
+        white-space: nowrap;
+        vertical-align: top; }
+       
+       .quantity.buttons_added input {
+        display: inline-block;
+        margin: 0;
+        vertical-align: top;
+        box-shadow: none;
+       }
+       
+       .quantity.buttons_added .minus,
+       .quantity.buttons_added .plus {
+        border: none;
+        background-color: #ffffff;
+        cursor:pointer;}
+       
+       .quantity.buttons_added .minus {
+        border-right: 0; }
+       
+       .quantity.buttons_added .plus {
+        border-left: 0; }
+       
+       .quantity input::-webkit-outer-spin-button,
+       .quantity input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin: 0; }
+        
+        .quantity.buttons_added .minus:focus,
+       .quantity.buttons_added .plus:focus {
+        outline: none; }
+       
+}

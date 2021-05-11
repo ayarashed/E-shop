@@ -1,9 +1,35 @@
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../../fonts/poppinns-regular/Poppins-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/poppinns-regular/Poppins-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/poppinns-regular/Poppins-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/poppinns-regular/Poppins-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url('../../dist/fonts/poppins-semibold/Poppins-SemiBold.eot'); /* IE9 Compat Modes */
+    src: url('../../dist/fonts/poppins-semibold/Poppins-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../dist/fonts/poppins-semibold/Poppins-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../dist/fonts/poppins-semibold/Poppins-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 *{
     box-sizing: border-box;
+    //font-family: 'Poppins', sans-serif;
 }
+p , span , a , li{
+    font-family: 'poppins-regular';
+}
+h3 , h4 , h5,h6{
+    font-family: 'poppins-semibold';
+    font-weight: 900;
+}
+@import 'abstract/svg';
 @import 'layout/header';
 @import 'layout/slider';
 @import 'layout/footer';
 @import 'pages/home';
 @import 'pages/listing';
 @import 'pages/product-view';
+@import 'pages/shopping-cart';
+@import 'pages/addressdata-typeofdelivery';
+@import 'pages/summary';

@@ -1,0 +1,89 @@
+footer{
+    margin-top: 50px;
+    ul{
+        padding-inline-start: 0px; 
+    }
+    .footer__housebranddetail{
+        p{
+            font-size: 16px;
+            color: grey;
+            //font-weight: 600;
+            width: 90%;
+            margin-top: 30px;
+        }
+    }
+    .footer__logo{
+        p{
+            font-size: 19px;
+            margin-left: 22px;
+            span{
+                color: $linkscolor;
+            }
+        }
+    }
+    .footer__social-media{
+        margin-top: 10px;
+        ul{
+            li{
+                list-style: none;
+                display: inline-block;
+                padding: 20px;
+                &:first-of-type{
+                    padding-left: 0px;
+                }
+                a{
+                    color: $color;
+                    &:hover{
+                        text-decoration: none;
+                        color: $linkscolor;
+                    }
+                }
+            }
+        }
+    } 
+    .footer__nav{
+        h6{
+            margin-bottom: 30px;
+            font-size: 13px;
+        }
+        ul{
+            li{
+                list-style: none;
+                margin-bottom: 16px;
+                a{
+                    text-decoration: none;
+                    font-size: 13px;
+                    color: black;
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        left: 0;
+                        width: 0;
+                        bottom: -2px;
+                        height: 2px;
+                        content: '';
+                        display: block;
+                        transition: width 0.3s ease;
+                        visibility: hidden;
+                        background-color: $linkscolor;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                        &::before{
+                            width: 100%;
+                            visibility: visible;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    .footer__lower{
+        border-top: 0.5px solid $hr-color;
+        padding: 35px 0px;
+        .copy-right{
+            color: $color;
+            font-size: 12px;
+        }
+    } 
+}

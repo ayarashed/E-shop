@@ -1,0 +1,135 @@
+.addressdata-typeofdelivery{
+    margin: 50px 0px;
+    .addressdata-typeofdelivery__heading{
+        .non-active{
+            margin-right: 95px;
+            background-color: $main-color;
+            border: 1px solid $linkscolor;
+            border-radius: 50%;
+            padding: 6px 7px;;
+            &::after{
+                content: '';
+                width: 80px;
+                height: 1px;
+                background-color: $color;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(30% ,-50%);
+            }
+        }
+    }
+    .addressdata-typeofdelivery__form{
+        margin-top: 50px;
+        .addressdata-typeofdelivery_action{
+            margin-top: 45px;
+            .act-button{
+                text-align: right;
+                @media (max-width: 768px) {
+                    text-align: left;
+                }
+            }
+            .back-step{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover{
+                    .icon-svg--icon-back{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        form{
+            >div{
+                margin-bottom: 20px;
+                input , select{
+                    border-radius: 50px;
+                    padding: 12px 20px;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .typeofdelivery{
+            
+        }
+    }
+    
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    > div{
+        flex: 0 0 130px;
+        margin-right: 5px;    
+        height: auto;
+        @media screen and (min-width : 769px) and (max-width : 1024px) {
+            flex: 0 0 130px;
+        }
+        @media screen and (min-width : 481px) and (max-width : 768px) {
+            flex: 0 0 115px;
+        }
+        @media screen and (min-width : 320px) and (max-width : 480px) {
+            flex: 0 0 90px;
+        }
+    }
+
+}
+.option{
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    .card-img{
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+        height: 100%;
+    }
+    .card-body{
+        text-align: center;
+        padding: 1.3rem 0.5rem;
+        span{
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: black;
+            font-weight: 900;
+            @media screen and (min-width : 769px) and (max-width : 1024px) {
+                font-size: 12px;
+            }
+        }
+        p{
+            font-size: 13px;
+            color: $color;
+            transition: all 0.3s ease-in-out;
+            @media screen and (min-width : 769px) and (max-width : 1024px) {
+                font-size: 12px;
+            }
+        }
+        @media screen and (min-width : 769px) and (max-width : 1024px) {
+            padding: 0.5rem .5rem;
+        }
+        @media screen and (min-width : 481px) and (max-width : 768px){
+            padding: .5rem 0.3rem;
+        }
+        @media screen and (min-width : 320px) and (max-width : 480px) {
+            padding: .5rem 0.3rem;
+        }
+    }
+    
+}
+.option{
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        border: 1px solid $linkscolor;
+        opacity: 1;
+    }
+}
+.selected{
+    border: 1px solid $linkscolor;
+    opacity: 1;
+}

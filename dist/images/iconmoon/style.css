@@ -1,0 +1,128 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-delivery {
+  width: 1.2001953125em;
+}
+
+.icon-gmail {
+  width: 1.3125em;
+}
+
+.icon-Group-9 {
+  width: 0.541015625em;
+}
+
+.icon-noun_Arrow-Left_2682937 {
+  width: 1.150390625em;
+}
+
+.icon-noun_hide_2040068 {
+  width: 1.4208984375em;
+}
+
+.icon-Path-5 {
+  width: 1.1884765625em;
+}
+
+.icon-Path-138 {
+  width: 1.74609375em;
+}
+
+.icon-payments {
+  width: 1.74609375em;
+}
+
+.icon-facebook-logo {
+  width: 0.541015625em;
+}
+
+.icon-linkedin-logo {
+  width: 1.046875em;
+}
+
+.icon-youtube {
+  width: 1.4541015625em;
+}
+
+.icon-care {
+  width: 0.4501953125em;
+}
+
+.icon-Group-25 {
+  width: 1.2314453125em;
+}
+
+.icon-home-cart {
+  width: 1.1884765625em;
+}
+
+.icon-noun_Arrow-Left_26829371 {
+  width: 1.150390625em;
+}
+
+.icon-noun_cloth_2129414 {
+  width: 1.3076171875em;
+}
+
+.icon-noun_delivery_166 {
+  width: 1.2001953125em;
+}
+
+.icon-noun_delivery_1665162 {
+  width: 1.2001953125em;
+}
+
+.icon-noun_delivery_2057282 {
+  width: 1.5927734375em;
+}
+
+.icon-noun_description_192324 {
+  width: 0.77734375em;
+}
+
+.icon-noun_Fast-Delivery_1212438 {
+  width: 1.3837890625em;
+}
+
+.icon-noun_guarantee_2519048 {
+  width: 0.947265625em;
+}
+
+.icon-noun_materials_308312 {
+  width: 0.98828125em;
+}
+
+.icon-noun_Star_1822860 {
+  width: 1.048828125em;
+}
+
+.icon-noun_Star_half {
+  width: 1.048828125em;
+}
+
+.icon-outline {
+  width: 0.4501953125em;
+}
+
+.icon-Path-3 {
+  width: 0.6015625em;
+}
+
+.icon-noun_cloth_21294141 {
+  width: 1.3076171875em;
+}
