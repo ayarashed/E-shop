@@ -67,7 +67,7 @@ gulp.task('minifyJs', function () {
 
 gulp.task('watch', function () {
     gulp.watch(['stage/sass/*.scss','stage/sass/*/*.scss','stage/scripts/*.js'],
-    gulp.series(['SassCompile','minifyltrcss','minifyJs']));
+    gulp.series(['SassCompile','minifyltrcss','minifyrtlcss','minifyJs']));
 });
 /*'minifyrtlcss','minifyJs'*/
 //,'stage/scripts/*.js','stage/scripts/*/*.js'

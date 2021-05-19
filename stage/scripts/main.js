@@ -1,22 +1,26 @@
 
 /******img box product detail image zoom and image slide render*************/
 $(document).ready(function(){
+    $('.imgBox').imgZoom({
+        boxWidth: 360,
+        boxHeight: 360,
+        marginLeft: 5,
+    });
     $('.thumb a').click(function(e){
         e.preventDefault();
         $('.imgBox img').attr("src" , $(this).attr("href"));
         $('.imgBox img').attr("data-origin" , $(this).attr("href"));
-
+        $('.imgBox').imgZoom({
+            boxWidth: 360,
+            boxHeight: 360,
+            marginLeft: 5,
+        });
     });
     $('.thumb-nav a').click(function(e){
         e.preventDefault();
         $('.imgBox img').attr("src" , $(this).attr("href"));
         $('.thumb-nav li').children().removeClass('active');
         $(this).addClass('active');
-    });
-    $('.imgBox').imgZoom({
-        boxWidth: 360,
-        boxHeight: 360,
-        marginLeft: 5,
     });
 });
 /***********************button for quantity minus and plus*************************************/
@@ -76,14 +80,24 @@ window.addEventListener('resize', function(event) {
 }, true);
 /***************selection of method of delievary*********/
 var options = document.getElementsByClassName('option');
+var optionPayment = document.getElementsByClassName('payment-card');
 for (var i = 0; i < options.length; i++) {
-    options[i].addEventListener("click", function(){
-    var selectedEl = document.querySelector(".selected");
-    if(selectedEl){
-        selectedEl.classList.remove("selected");
-    }
-    this.classList.add("selected");
-    }, false);
+  options[i].addEventListener("click", function(){
+  var selectedEl = document.querySelector(".selected");
+  if(selectedEl){
+      selectedEl.classList.remove("selected");
+  }
+  this.classList.add("selected");
+  }, false);
+}
+for (var i = 0; i < optionPayment.length; i++) {
+  optionPayment[i].addEventListener("click", function(){
+  var selectedEl = document.querySelector(".selected");
+  if(selectedEl){
+      selectedEl.classList.remove("selected");
+  }
+  this.classList.add("selected");
+  }, false);
 }
 /***************fixed navbar on scroll************/
 
@@ -151,3 +165,50 @@ window.onclick = function(event) {
     });
   }
 }
+/***validation address input******/
+$.validator.addMethod("nowhitespace", function (value, element) {
+    return this.optional(element) || /^\S+$/i.test(value);
+  }, "No white space please");
+  $('#form').validate({
+    rules:{
+        firstName: {
+        required: true,
+        minlength: 2,
+        lettersonly: true
+      },
+      email:{
+        required: true,
+        email: true
+      },
+      phone:{
+        required: true,
+        nowhitespace:true,
+        number: true ,
+        minlength:11,
+        maxlength:11
+      },
+      lastName:{
+        required: true,
+        minlength: 2,
+        lettersonly: true
+      },
+      address:{
+        required: true
+      },
+      city:{
+        required: true
+      },
+      postalCode:{
+        required: true,
+        number: true 
+      }
+    },
+    highlight: function highlight(element) {
+      $(element).addClass("attention");
+    },
+    unhighlight: function unhighlight(element) {
+      $(element).removeClass("attention");
+    }
+  });
+  
+  

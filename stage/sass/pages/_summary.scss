@@ -1,11 +1,12 @@
 .addressdata-typeofdelivery__heading{
     margin-bottom: 50px;
     .non-active{
-        margin-right: 95px;
+        margin-#{$end-dir}: 95px;
         background-color: $main-color;
         border: 1px solid $linkscolor;
         border-radius: 50%;
-        padding: 6px 7px;;
+        padding: 4px 8px;
+        display: inline-block;
         &::after{
             content: '';
             width: 80px;
@@ -13,15 +14,15 @@
             background-color: $color;
             position: absolute;
             top: 50%;
-            left: 50%;
-            transform: translate(30% ,-50%);
+            $start-dir: 50%;
+            transform: translate(30% * $transform-direction ,-50%);
         }
         @media only screen and (min-width : 320px) and (max-width : 480px){
-            margin-right: 90px!important;
+            margin-#{$end-dir}: 90px!important;
         }
     }
     .summary-active {
-        margin-right: 0;
+        margin-#{$end-dir}: 0;
         &::after{
             display: none;
         }
@@ -30,7 +31,7 @@
 .container-item{
     display: flex;
     > div{
-        margin-right: 10px;    
+        margin-#{$end-dir}: 10px;    
         height: auto;
     }
     .card{
@@ -41,6 +42,30 @@
             margin: 29px 15px;
         }
     }
+    .payment-card{
+        flex: 0 0 120px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        transition: all 0.5s ease;
+        .img-width {
+            margin: 21px 13px;
+        }
+        &:nth-of-type(3) , &:nth-of-type(4){
+            .img-width {
+                margin: 16px 13px;
+            }
+        }&:nth-of-type(5) , &:nth-of-type(6){
+            .img-width {
+                margin: 19px 13px;
+            }
+        }
+        &:hover{
+            border-color:$linkscolor ;
+        }
+    }
+}
+.payment-method{
+    flex-wrap: wrap;
 }
 .delivery-method{
     position: relative;
@@ -85,7 +110,7 @@ h6{
         top: 50%;
         transform: translateY(-50%);
         span{
-            margin-left: 20px;
+            margin-#{$start-dir}: 20px;
         }
         @media only screen and (min-width : 481px) and (max-width : 768px){
             width: 100%;
@@ -134,10 +159,10 @@ h6{
     display:flex;
     align-items: baseline;
     .act-button{
-        text-align: right;
+        text-align:$end-dir;
         flex: 0 0 400px;
         .continue-shopping {
-            margin-right: 0px;
+            margin-#{$end-dir}: 0px;
             a{
                 font-size: 13px;
             }
@@ -185,15 +210,15 @@ h6{
         }
         @media screen and (min-width : 769px) and (max-width : 1024px) {
             flex: 0 0 350px;
-            text-align: left;
+            text-align: $start-dir;
         }
         @media screen and (min-width : 481px) and (max-width : 768px) {
             flex: 0 0 286px;
-            text-align: left;
+            text-align: $start-dir;
         }
         @media screen and (min-width : 320px) and (max-width : 480px) {
             flex: 0 0 100%;
-            text-align: left;
+            text-align: $start-dir;
             margin: 10px 0px
         }
     }
@@ -206,7 +231,7 @@ h6{
         }
         &:hover{
             .icon-svg--icon-back{
-                margin-left: 10px;
+                margin-#{$start-dir}: 10px;
             }
         }
     }

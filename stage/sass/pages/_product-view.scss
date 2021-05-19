@@ -18,7 +18,7 @@ body{
 ul.thumb{
     margin: 0 auto;
     padding: 0;
-    float: left;
+    float: $start-dir;
     li{
         list-style: none;
         margin: 10px 0px;
@@ -36,16 +36,16 @@ ul.thumb{
     .thumb-nav{
         position: absolute;
         z-index: 99;
-        bottom: 10px;
+        bottom: 20px;
         width: 100%;
         padding-inline-start: 0px;
         li{
             list-style: none;
             display: inline-block;
             position: relative; 
-            left: 50%;
+            $start-dir: 50%;
             transform: translateX(-140%);
-            margin-right: -4px;
+            margin-#{$end-dir}: -4px;
             a{
                 display: inline-block;
                 width: 70px;
@@ -60,7 +60,7 @@ ul.thumb{
     }
 }
 .imgBox{
-    float: left;
+    float: $start-dir;
     overflow: hidden;
     margin: 10px 15px;
     img{
@@ -120,7 +120,7 @@ ul.thumb{
         margin-top: 10px;
         .sale , .product-id , .house-brand , .price{
             width: 50%;
-            float:left;
+            float:$start-dir;
             font-size: 12px;
         }
         .sale{
@@ -135,7 +135,7 @@ ul.thumb{
             }
         }
         .product-id{
-            text-align: right;
+            text-align: $end-dir;
             p{
                 color: $color;
             }
@@ -144,20 +144,20 @@ ul.thumb{
             font-size: 12px;
         }
         .house-brand{
-            text-align: right;
+            text-align: $end-dir;
             padding-top: 15px;
             width: 40%;
-            float: left;
+            float: $start-dir;
         } 
         .price{
-            text-align: left;
+            text-align: $start-dir;
             font-size: 30px;
             font-weight: 600;
             width: 60%;
-            float: left;
+            float: $start-dir;
             .new-price{
                 color:$border-color;
-                padding-right: 35px;
+                padding-#{$end-dir}: 35px;
             }
             .gray{
                 color: $color;
@@ -197,7 +197,7 @@ ul.thumb{
             .colors {
                 display: flex;
                 .color {
-                    margin-right: 10px;
+                    margin-#{$end-dir}: 10px;
                     cursor: pointer;
                     padding: 8px 8px ;
                     border: 0.2px solid #aaa;
@@ -241,7 +241,7 @@ ul.thumb{
             span{
                 font-size: 13px;
                 strong{
-                    margin-left: 36px;
+                    margin-#{$start-dir}: 36px;
                     font-size: 13px;
                     font-weight: 800;
                 }
@@ -284,11 +284,11 @@ ul.thumb{
                 border-radius: 49px;
                 padding: 12px 36px;
                 background-color: $linkscolor;
-                margin-left: 15px;
+                margin-#{$start-dir}: 15px;
                 @media only screen and (min-width : 320px) and (max-width : 480px){
                     padding: 10px 15px;
                     font-size: 14px;
-                    margin-left: 0px;
+                    margin-#{$start-dir}: 0px;
                 }
                 @media only screen and (min-width : 769px) and (max-width : 1024px){
                     padding: 8px 22px;
@@ -325,7 +325,7 @@ ul.thumb{
                }
                
                .quantity.buttons_added {
-                text-align: left;
+                text-align: $start-dir;
                 position: relative;
                 white-space: nowrap;
                 vertical-align: top; }
@@ -344,10 +344,10 @@ ul.thumb{
                 cursor:pointer;}
                
                .quantity.buttons_added .minus {
-                border-right: 0; }
+                border-#{$end-dir}: 0; }
                
                .quantity.buttons_added .plus {
-                border-left: 0; }
+                border-#{$start-dir}: 0; }
                
                .quantity input::-webkit-outer-spin-button,
                .quantity input::-webkit-inner-spin-button {
@@ -387,7 +387,7 @@ ul.thumb{
             border: 0.5px solid white;
             border-radius: 49px;
             &:first-child{
-                margin-right: 10px;
+                margin-#{$end-dir}: 10px;
             }
             @media only screen and (min-width : 320px) and (max-width : 480px){
                 padding: 7px 16px;
@@ -466,12 +466,12 @@ ul.thumb{
             }
             .rating__star{
                 width: 15%;
-                float: left;
+                float: $start-dir;
                 span{
                     color: $linkscolor;
                 }
                 strong{
-                    margin-left: 5px;
+                    margin-#{$start-dir}: 5px;
                     color: $backgroundcolor;
                 }
                 @media only screen and (min-width : 320px) and (max-width : 480px){
@@ -483,7 +483,7 @@ ul.thumb{
             }
             .rating__progress{
                 width: 85%;
-                float: left;
+                float: $start-dir;
                 padding-top: 5px;
                 @media only screen and (min-width : 320px) and (max-width : 480px){
                     width: 70%;
@@ -516,7 +516,7 @@ ul.thumb{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 99999999; /* Sit on top */
-    left: 0;
+    $start-dir: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -537,7 +537,7 @@ ul.thumb{
   /* The Close Button */
   .close-table {
     color: #aaa;
-    float: right;
+    float: $end-dir;
     font-size: 28px;
     font-weight: bold;
   }
