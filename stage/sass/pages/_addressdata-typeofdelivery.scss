@@ -48,8 +48,12 @@
                 input , select{
                     border-radius: 50px;
                     padding: 12px 20px;
+                    color: gray;
                     &:focus{
                         box-shadow: none;
+                    }
+                    &:focus-visible {
+                        outline: -webkit-focus-ring-color auto 0px;
                     }
                 }
             }
@@ -135,14 +139,11 @@
     opacity: 1;
 }
 .error{
-    color: red;
     margin-#{$start-dir}: 13px;
     font-size: 13px;
     margin-bottom: 0px;
     font-weight: 400;
-    background-color: #EDEDED!important;
     color: red!important;
-    text-align: $end-dir!important;
 }
 .attention{
     border: 1px solid red !important;

@@ -102,3 +102,22 @@
     height: 11.5px;
     fill:$main-color;
 }
+.icon-svg-slide{
+    width: 15px;
+    height: 18px;
+    fill: black;
+}
+.modify--header{
+    .icon-svg--navbar-brand{
+        fill: white;
+    }
+    .icon-svg--search{
+        fill: white;
+    }
+    .icon-svg--avatar{
+        fill: white;
+    }
+    .icon-svg--cart{
+        fill: white;
+    }
+}

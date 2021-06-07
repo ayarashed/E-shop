@@ -1,0 +1,360 @@
+[
+    {
+        "ProductID": 1,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "4681",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"T-Shirt",
+        "ProductPrice": 119,
+        "Size": "xl"
+    },
+    {
+        "ProductID": 2,
+        "ImageSrc": "../images/AdobeStock_136908398.png",
+        "ProductCode": "2891",
+        "ProductName": "t-shirt",
+        "category":"Pants",
+        "ProductPrice": 119,
+        "Size": "m"
+
+    },
+    {
+        "ProductID": 3,
+        "ImageSrc": "../images/AdobeStock_173519034.png",
+        "ProductCode": "6927",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"T-Shirt",
+        "ProductPrice": 119,
+        "Size": "xxl"
+       },
+    {
+        "ProductID": 4,
+        "ImageSrc": "../images/svg/AdobeStock_236655481.png",
+        "ProductCode": "279",
+        "ProductName": "T-shirt",
+        "category":"Shoes",
+        "ProductPrice": 119,
+        "Size": "m"
+    },
+    {
+        "ProductID": 5,
+        "ImageSrc": "../images/6.png",
+        "ProductCode": "594",
+        "ProductName": "sweetshirts",
+        "category":"Pants",
+        "ProductPrice": 119,
+        "Size": "xxl"
+    },
+    {
+        "ProductID": 6,
+        "ImageSrc": "../images/11.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "s"
+    },{
+        "ProductID": 7,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "m"
+    },{
+        "ProductID": 8,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "l"
+    },{
+        "ProductID": 9,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"T-Shirt",
+        "ProductPrice":119,
+        "Size": "xl"
+    },
+    {
+        "ProductID": 10,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "s"
+    },
+    {
+        "ProductID": 11,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "m"
+    },
+    {
+        "ProductID": 12,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "l"
+    },
+    {
+        "ProductID": 13,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "m"
+    },
+    {
+        "ProductID": 14,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "s"
+    },
+    {
+        "ProductID": 15,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "xxl"
+    },
+    {
+        "ProductID": 16,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"T-Shirt",
+        "ProductPrice":119,
+        "Size": "xxl"
+    },
+    {
+        "ProductID": 17,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "s"
+    },
+    {
+        "ProductID": 18,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "xl"
+    },
+    {
+        "ProductID": 19,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "l"
+    },
+    {
+        "ProductID": 20,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "m"
+    },
+    {
+        "ProductID": 21,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"T-Shirt",
+        "ProductPrice":119,
+        "Size": "s"
+    },
+    {
+        "ProductID": 22,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "xl"
+    },
+    {
+        "ProductID": 23,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "m"
+    },
+    {
+        "ProductID": 24,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "s"
+    },
+    {
+        "ProductID": 25,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "xl"
+    },
+    {
+        "ProductID": 26,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "m"
+    },
+    {
+        "ProductID": 27,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "xs"
+    },
+    {
+        "ProductID": 28,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "xl"
+    },
+    {
+        "ProductID": 29,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "m"
+    },
+    {
+        "ProductID": 30,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "xs"
+    },
+    {
+        "ProductID": 31,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"T-Shirt",
+        "ProductPrice":119,
+        "Size": "l"
+    },
+    {
+        "ProductID": 32,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "xs"
+    },
+    {
+        "ProductID": 33,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "xl"
+    },
+    {
+        "ProductID": 34,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "l"
+    },
+    {
+        "ProductID": 35,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"T-Shirt",
+        "ProductPrice":119,
+        "Size": "xs"
+    },
+    {
+        "ProductID": 36,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":119,
+        "Size": "xl"
+    },
+    {
+        "ProductID": 37,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Shoes",
+        "ProductPrice":119,
+        "Size": "l"
+    },
+    {
+        "ProductID": 38,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"sweetshirts",
+        "ProductPrice":119,
+        "Size": "xxl"
+    },
+    {
+        "ProductID": 39,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"Pants",
+        "ProductPrice":500,
+        "Size": "xs"
+    },
+    {
+        "ProductID": 40,
+        "ImageSrc": "../images/AdobeStock_118120200.png",
+        "ProductCode": "5683",
+        "ProductName": "Losse knit 3/4 Sleve",
+        "category":"T-Shirt",
+        "ProductPrice":119,
+        "Size": "xs"
+    }
+]

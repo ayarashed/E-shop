@@ -21,7 +21,9 @@ header {
       font-weight: 600;
     }
   }
+  
 }
+
 /***************modal**************************/
 .modal {
     padding-right: 0px !important;
@@ -426,3 +428,22 @@ header {
   pointer-events: auto;
 }
 
+
+.modify--header{
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255 , 0);
+  z-index: 999999999999999999;
+  .logo{
+    a{
+      color: white!important;
+    }
+  }
+  .links{
+    >li{
+        a{
+          color: white!important;
+        }
+      }
+  }
+}
